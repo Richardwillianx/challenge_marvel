@@ -1,11 +1,11 @@
 /* eslint-disable no-underscore-dangle */
-import { createSlice } from '@reduxjs/toolkit';
-import { TResponseApiHeroes } from '../../../@types/marvel';
+import { createSlice } from "@reduxjs/toolkit";
+import { TResponseApiHeroes } from "../../../@types/marvel";
 
 const initialState: TResponseApiHeroes = {} as TResponseApiHeroes;
 
 const _allHeroesSlice = createSlice({
-  name: 'allHeroes',
+  name: "allHeroes",
   initialState,
   reducers: {
     updateAllHeroes: (_state, action) => action.payload,
@@ -14,7 +14,7 @@ const _allHeroesSlice = createSlice({
 });
 
 const _HeroSlice = createSlice({
-  name: 'hero',
+  name: "hero",
   initialState: {} as TResponseApiHeroes,
   reducers: {
     updateHero: (_, action) => action.payload,
